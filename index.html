@@ -7,8 +7,26 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            height: 55px;
+            background-color: #0eb044;
+            color: white;
+            padding: 0 10px;
+            font-size: 20px;
+        }
+        .top-bar img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
         }
         .left-half {
             flex: 1;
@@ -22,17 +40,17 @@
         }
         .top-right {
             flex: 1;
-            background-image: url('Smartpass.jpg');
-            background-size: cover;
-            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-image: url('Smartpass.jpg');
+            background-size: cover;
+            background-position: center;
         }
         .top-right a {
             display: block;
-            width: 100%;
-            height: 100%;
+            width: 80%; /* Scale down by 80% */
+            height: 80%; /* Scale down by 80% */
             text-indent: -9999px; /* Hide text if needed */
         }
         .bottom-right {
@@ -46,15 +64,21 @@
     </style>
 </head>
 <body>
-    <div class="left-half">
-        <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
+    <div class="top-bar">
+        <img src="logo.png" alt="Logo">
+        Room 1101 Kiosk
     </div>
-    <div class="right-half">
-        <div class="top-right">
-            <a href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
+    <div class="content">
+        <div class="left-half">
+            <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
         </div>
-        <div class="bottom-right">
-            <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18"></iframe>
+        <div class="right-half">
+            <div class="top-right">
+                <a href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
+            </div>
+            <div class="bottom-right">
+                <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18"></iframe>
+            </div>
         </div>
     </div>
 </body>
