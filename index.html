@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Website</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+        }
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+        }
+        .left {
+            left: 0;
+            background-color: #111;
+        }
+        .right {
+            right: 0;
+            background-color: #555;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="split left">
+        <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
+    </div>
+    <div class="split right">
+        <iframe src="https://widgets.risevision.com/viewer/?type=webplayer&id=UCXGCXWGKF3Z"></iframe>
+    </div>
+</body>
+</html>
