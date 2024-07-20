@@ -9,11 +9,15 @@
             height: 100%;
             margin: 0;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
         .split {
             height: 100%;
             width: 50%;
             position: fixed;
+            overflow: hidden;
         }
         .left {
             left: 0;
@@ -27,6 +31,11 @@
             width: 100%;
             height: 100%;
             border: none;
+            transform: rotate(90deg); /* Rotate the iframe for portrait mode */
+            transform-origin: left top; /* Adjust origin to the top-left corner */
+        }
+        .right iframe {
+            transform: none; /* Keep the right iframe in landscape mode */
         }
 
         @media screen and (max-width: 824px) and (orientation: portrait) {
@@ -34,8 +43,8 @@
                 display: none;
             }
             .right {
-                width: 400px;
-                height: 824px;
+                width: 100%;
+                height: 100%;
                 left: 0;
                 right: 0;
                 top: 0;
