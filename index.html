@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Aspect Ratio</title>
+    <title>Embedded Websites</title>
     <style>
-        body, html {
+        body {
+            display: flex;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
+        }
+        .left-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .right-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-right {
+            flex: 1;
+            background-image: url('Smartpass.jpg');
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0; /* Change background color as needed */
         }
-        .container {
-            position: relative;
+        .top-right a {
+            display: block;
             width: 100%;
-            max-width: 2160px;
-            height: 0;
-            padding-bottom: 177.78%; /* 3840px / 2160px * 100% = 177.78% */
-            background-color: #fff;
-            overflow: hidden;
+            height: 100%;
+            text-indent: -9999px; /* Hide text if needed */
+        }
+        .bottom-right {
+            flex: 1;
         }
         iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             border: none;
@@ -35,8 +46,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18"></iframe>
+    <div class="left-half">
+        <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
+    </div>
+    <div class="right-half">
+        <div class="top-right">
+            <a href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
+        </div>
+        <div class="bottom-right">
+            <iframe src="https://widgets.risevision.com/viewer/?type=webplayer&id=NJRSM6FU64BY"></iframe>
+        </div>
     </div>
 </body>
 </html>
