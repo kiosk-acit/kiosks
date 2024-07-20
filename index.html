@@ -29,17 +29,19 @@
             border: none;
         }
 
-        @media screen and (min-width: 2160px) and (max-height: 3840px) and (orientation: portrait) {
+        @media screen and (max-width: 824px) and (orientation: portrait) {
             .left {
                 display: none;
             }
             .right {
-                width: 2160px;
-                height: 3840px;
+                width: 400px;
+                height: 824px;
                 left: 0;
-                position: absolute;
                 right: 0;
+                top: 0;
+                bottom: 0;
                 margin: auto;
+                position: absolute;
             }
             body, html {
                 justify-content: center;
