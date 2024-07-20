@@ -29,9 +29,13 @@
             border: none;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+            .left {
+                display: none;
+            }
             .right {
-                width: 768px;
+                width: 100%;
+                left: 0;
             }
         }
     </style>
