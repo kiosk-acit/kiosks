@@ -34,6 +34,10 @@
             display: flex;
             flex-direction: column;
         }
+        .left-half {
+            justify-content: center;
+            align-items: center;
+        }
         .top-right {
             flex: 1;
             display: flex;
@@ -57,6 +61,12 @@
             height: 330px;
             border: none;
         }
+        .form-field {
+            width: 80%;
+            height: 40px;
+            font-size: 18px;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +76,7 @@
     </div>
     <div class="content">
         <div class="left-half">
-            <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
+            <input type="text" class="form-field" id="inputField" placeholder="Enter text here...">
         </div>
         <div class="right-half">
             <div class="top-right">
@@ -80,5 +90,5 @@
     <div class="bottom-bar">
         Atlantic County Institute of Technology
     </div>
-</body>
-</html>
+    <script>
+        window.onload = function()
