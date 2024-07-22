@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3105</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0; /* Remove all margins */
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 55px;
+            background-color: #802c2c;
+            color: white;
+            padding: 0 10px;
+            font-size: 20px;
+        }
+        .top-bar img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .top-bar div:first-child {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            height: calc(100% - 55px - 20px); /* Ensure the content fills the remaining height */
+            margin-top: 20px; /* Add margin beneath the top bar */
+        }
+        .left-half, .right-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Ensure the halves fill the full height of the content */
+        }
+        .right-half {
+            margin-right: 20px; /* Add right margin */
+        }
+        .top-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('Smartpass.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px; /* Add bottom margin */
+        }
+        .top-right a {
+            display: block;
+            width: 50%; /* Reduce the width */
+            height: 50%; /* Reduce the height */
+            text-indent: -9999px; /* Hide text if needed */
+            border-radius: 10px; /* Round the corners */
+        }
+        .bottom-right {
+            flex: 2; /* Make this section twice as big */
+        }
+        iframe {
+            width: 100%;
+            height: 100%; /* Ensure iframes fill their container */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div>
+            <img src="logo.png" alt="Logo">
+            Room 3105
+        </div>
+        <div class="contact-info">
+            <span>IT Support Email: servicedesk@acitech.org      Phone: 4100</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-half">
+            <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=F7A0A55C-FC1A-455D-B028-7085F26A7FEC"></iframe>
+        </div>
+        <div class="right-half">
+            <div class="top-right">
+                <a href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
+            </div>
+            <div class="bottom-right">
+                <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
