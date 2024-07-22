@@ -21,6 +21,7 @@
             color: white;
             padding: 0 10px;
             font-size: 20px;
+            margin-bottom: 20px; /* Add margin below the top bar */
         }
         .top-bar img {
             height: 40px;
@@ -35,7 +36,7 @@
             display: flex;
             flex: 1;
             flex-direction: row;
-            height: calc(100% - 55px); /* Ensure the content fills the remaining height */
+            height: calc(100% - 55px - 20px); /* Adjust height to account for the margin */
         }
         .left-half, .right-half {
             flex: 1;
