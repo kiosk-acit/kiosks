@@ -34,11 +34,13 @@
             display: flex;
             flex: 1;
             flex-direction: row;
+            height: calc(100% - 55px); /* Ensure the content fills the remaining height */
         }
         .left-half, .right-half {
             flex: 1;
             display: flex;
             flex-direction: column;
+            height: 100%; /* Ensure the halves fill the full height of the content */
         }
         .top-right {
             flex: 1;
@@ -51,8 +53,8 @@
         }
         .top-right a {
             display: block;
-            width: 100%; /* Scale down to 30% */
-            height: 80%; /* Scale down by 80% */
+            width: 100%;
+            height: 80%;
             text-indent: -9999px; /* Hide text if needed */
         }
         .bottom-right {
@@ -60,7 +62,7 @@
         }
         iframe {
             width: 100%;
-            height: 330px;
+            height: 100%; /* Ensure iframes fill their container */
             border: none;
         }
     </style>
