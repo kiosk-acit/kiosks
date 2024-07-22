@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Websites</title>
+    <title>1101</title>
     <style>
         body {
             display: flex;
@@ -27,13 +27,9 @@
         .content {
             display: flex;
             flex: 1;
+            flex-direction: row;
         }
-        .left-half {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .right-half {
+        .left-half, .right-half {
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -49,12 +45,12 @@
         }
         .top-right a {
             display: block;
-            width: 60%; /* Scale down by 80% */
-            height: 60%; /* Scale down by 80% */
+            width: 80%; /* Scale down by 80% */
+            height: 80%; /* Scale down by 80% */
             text-indent: -9999px; /* Hide text if needed */
         }
         .bottom-right {
-            flex: 2; /* Make this section twice as big */
+            flex: 1; /* Make this section the same size */
         }
         iframe {
             width: 100%;
