@@ -1,104 +1,211 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1101</title>
+    <title>Kiosks Dashboard</title>
     <style>
         body {
             display: flex;
             flex-direction: column;
+            align-items: center;
             height: 100vh;
-            margin: 0; /* Remove all margins */
-        }
-        .top-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 55px;
-            background-color: #802c2c;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
             color: white;
-            padding: 0 10px;
-            font-size: 20px;
+            overflow: auto; /* Ensure all buttons are visible */
         }
-        .top-bar img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        .top-bar div:first-child {
-            display: flex;
-            align-items: center;
-        }
-        .top-bar .contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        .content {
-            display: flex;
-            flex: 1;
-            flex-direction: row;
-            height: calc(100% - 55px - 20px); /* Ensure the content fills the remaining height */
-            margin-top: 20px; /* Add margin beneath the top bar */
-        }
-        .left-half, .right-half {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            height: 100%; /* Ensure the halves fill the full height of the content */
-        }
-        .right-half {
-            margin-right: 20px; /* Add right margin */
-        }
-        .top-right {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url('Smartpass.jpg');
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 20px; /* Add bottom margin */
-        }
-        .top-right a {
-            display: block;
-            width: 50%; /* Reduce the width */
-            height: 50%; /* Reduce the height */
-            text-indent: -9999px; /* Hide text if needed */
-            border-radius: 10px; /* Round the corners */
-        }
-        .bottom-right {
-            flex: 2; /* Make this section twice as big */
-        }
-        iframe {
+        .header {
             width: 100%;
-            height: 100%; /* Ensure iframes fill their container */
-            border: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            border-bottom: 2px solid #4CAF50;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header .date {
+            font-size: 14px;
+            color: #aaa;
+        }
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+            background-color: #4CAF50; /* Default color */
         }
     </style>
 </head>
 <body>
-    <div class="top-bar">
-        <div>
-            <img src="logo.png" alt="Logo">
-            Room 1101 
-        </div>
-        <div class="contact-info">
-            <span>IT Support Email: servicedesk@acitech.org      Phone: 4100</span>
-        </div>
+    <div class="header">
+        <h1>Kiosks Dashboard</h1>
+        <div class="date">July 22, 2024 05:50 PM</div>
     </div>
-    <div class="content">
-        <div class="left-half">
-            <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
-        </div>
-        <div class="right-half">
-            <div class="top-right">
-                <a href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
-            </div>
-            <div class="bottom-right">
-                <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18"></iframe>
-            </div>
-        </div>
+    <div class="buttons-container">
+<a href="https://kiosk-acit.github.io/kiosks/1102.html" class="button" style="background-color: #FF5733;">1102</a>
+<a href="https://kiosk-acit.github.io/kiosks/1103.html" class="button" style="background-color: #FF5733;">1103</a>
+<a href="https://kiosk-acit.github.io/kiosks/1104.html" class="button" style="background-color: #FF5733;">1104</a>
+<a href="https://kiosk-acit.github.io/kiosks/1105.html" class="button" style="background-color: #FF5733;">1105</a>
+<a href="https://kiosk-acit.github.io/kiosks/1106.html" class="button" style="background-color: #FF5733;">1106</a>
+<a href="https://kiosk-acit.github.io/kiosks/1110.html" class="button" style="background-color: #FF5733;">1110</a>
+<a href="https://kiosk-acit.github.io/kiosks/1111.html" class="button" style="background-color: #FF5733;">1111</a>
+<a href="https://kiosk-acit.github.io/kiosks/1114.html" class="button" style="background-color: #FF5733;">1114</a>
+<a href="https://kiosk-acit.github.io/kiosks/1119.html" class="button" style="background-color: #FF5733;">1119</a>
+<a href="https://kiosk-acit.github.io/kiosks/1120.html" class="button" style="background-color: #FF5733;">1120</a>
+<a href="https://kiosk-acit.github.io/kiosks/1124.html" class="button" style="background-color: #FF5733;">1124</a>
+<a href="https://kiosk-acit.github.io/kiosks/1125.html" class="button" style="background-color: #FF5733;">1125</a>
+<a href="https://kiosk-acit.github.io/kiosks/1137.html" class="button" style="background-color: #FF5733;">1137</a>
+<a href="https://kiosk-acit.github.io/kiosks/1138.html" class="button" style="background-color: #FF5733;">1138</a>
+<a href="https://kiosk-acit.github.io/kiosks/1150.html" class="button" style="background-color: #FF5733;">1150</a>
+<a href="https://kiosk-acit.github.io/kiosks/1160.html" class="button" style="background-color: #FF5733;">1160</a>
+<a href="https://kiosk-acit.github.io/kiosks/1173.html" class="button" style="background-color: #FF5733;">1173</a>
+<a href="https://kiosk-acit.github.io/kiosks/1176.html" class="button" style="background-color: #FF5733;">1176</a>
+<a href="https://kiosk-acit.github.io/kiosks/1177.html" class="button" style="background-color: #FF5733;">1177</a>
+<a href="https://kiosk-acit.github.io/kiosks/1179.html" class="button" style="background-color: #FF5733;">1179</a>
+<a href="https://kiosk-acit.github.io/kiosks/1180.html" class="button" style="background-color: #FF5733;">1180</a>
+<a href="https://kiosk-acit.github.io/kiosks/1181.html" class="button" style="background-color: #FF5733;">1181</a>
+<a href="https://kiosk-acit.github.io/kiosks/1182.html" class="button" style="background-color: #FF5733;">1182</a>
+<a href="https://kiosk-acit.github.io/kiosks/1183.html" class="button" style="background-color: #FF5733;">1183</a>
+<a href="https://kiosk-acit.github.io/kiosks/1184.html" class="button" style="background-color: #FF5733;">1184</a>
+<a href="https://kiosk-acit.github.io/kiosks/1185.html" class="button" style="background-color: #FF5733;">1185</a>
+<a href="https://kiosk-acit.github.io/kiosks/1186.html" class="button" style="background-color: #FF5733;">1186</a>
+<a href="https://kiosk-acit.github.io/kiosks/1189.html" class="button" style="background-color: #FF5733;">1189</a>
+<a href="https://kiosk-acit.github.io/kiosks/1190.html" class="button" style="background-color: #FF5733;">1190</a>
+<a href="https://kiosk-acit.github.io/kiosks/1191.html" class="button" style="background-color: #FF5733;">1191</a>
+<a href="https://kiosk-acit.github.io/kiosks/1192.html" class="button" style="background-color: #FF5733;">1192</a>
+<a href="https://kiosk-acit.github.io/kiosks/1193.html" class="button" style="background-color: #FF5733;">1193</a>
+<a href="https://kiosk-acit.github.io/kiosks/1203.html" class="button" style="background-color: #FF5733;">1203</a>
+<a href="https://kiosk-acit.github.io/kiosks/1204.html" class="button" style="background-color: #FF5733;">1204</a>
+<a href="https://kiosk-acit.github.io/kiosks/1205.html" class="button" style="background-color: #FF5733;">1205</a>
+<a href="https://kiosk-acit.github.io/kiosks/1206.html" class="button" style="background-color: #FF5733;">1206</a>
+<a href="https://kiosk-acit.github.io/kiosks/1208.html" class="button" style="background-color: #FF5733;">1208</a>
+<a href="https://kiosk-acit.github.io/kiosks/1209.html" class="button" style="background-color: #FF5733;">1209</a>
+<a href="https://kiosk-acit.github.io/kiosks/1210.html" class="button" style="background-color: #FF5733;">1210</a>
+<a href="https://kiosk-acit.github.io/kiosks/1220.html" class="button" style="background-color: #FF5733;">1220</a>
+<a href="https://kiosk-acit.github.io/kiosks/1228.html" class="button" style="background-color: #FF5733;">1228</a>
+<a href="https://kiosk-acit.github.io/kiosks/1230.html" class="button" style="background-color: #FF5733;">1230</a>
+<a href="https://kiosk-acit.github.io/kiosks/1232.html" class="button" style="background-color: #FF5733;">1232</a>
+<a href="https://kiosk-acit.github.io/kiosks/1240.html" class="button" style="background-color: #FF5733;">1240</a>
+<a href="https://kiosk-acit.github.io/kiosks/1251.html" class="button" style="background-color: #FF5733;">1251</a>
+<a href="https://kiosk-acit.github.io/kiosks/1261.html" class="button" style="background-color: #FF5733;">1261</a>
+<a href="https://kiosk-acit.github.io/kiosks/1262.html" class="button" style="background-color: #FF5733;">1262</a>
+<a href="https://kiosk-acit.github.io/kiosks/1263.html" class="button" style="background-color: #FF5733;">1263</a>
+<a href="https://kiosk-acit.github.io/kiosks/1265.html" class="button" style="background-color: #FF5733;">1265</a>
+<a href="https://kiosk-acit.github.io/kiosks/1312.html" class="button" style="background-color: #FF5733;">1312</a>
+<a href="https://kiosk-acit.github.io/kiosks/1321.html" class="button" style="background-color: #FF5733;">1321</a>
+<a href="https://kiosk-acit.github.io/kiosks/1330.html" class="button" style="background-color: #FF5733;">1330</a>
+<a href="https://kiosk-acit.github.io/kiosks/1332.html" class="button" style="background-color: #FF5733;">1332</a>
+<a href="https://kiosk-acit.github.io/kiosks/1334.html" class="button" style="background-color: #FF5733;">1334</a>
+<a href="https://kiosk-acit.github.io/kiosks/1350.html" class="button" style="background-color: #FF5733;">1350</a>
+<a href="https://kiosk-acit.github.io/kiosks/1401.html" class="button" style="background-color: #FF5733;">1401</a>
+<a href="https://kiosk-acit.github.io/kiosks/1402.html" class="button" style="background-color: #FF5733;">1402</a>
+<a href="https://kiosk-acit.github.io/kiosks/1409.html" class="button" style="background-color: #FF5733;">1409</a>
+<a href="https://kiosk-acit.github.io/kiosks/1410.html" class="button" style="background-color: #FF5733;">1410</a>
+<a href="https://kiosk-acit.github.io/kiosks/1412.html" class="button" style="background-color: #FF5733;">1412</a>
+<a href="https://kiosk-acit.github.io/kiosks/1413.html" class="button" style="background-color: #FF5733;">1413</a>
+<a href="https://kiosk-acit.github.io/kiosks/1414.html" class="button" style="background-color: #FF5733;">1414</a>
+<a href="https://kiosk-acit.github.io/kiosks/1501.html" class="button" style="background-color: #FF5733;">1501</a>
+<a href="https://kiosk-acit.github.io/kiosks/1502.html" class="button" style="background-color: #FF5733;">1502</a>
+<a href="https://kiosk-acit.github.io/kiosks/1503.html" class="button" style="background-color: #FF5733;">1503</a>
+<a href="https://kiosk-acit.github.io/kiosks/1504.html" class="button" style="background-color: #FF5733;">1504</a>
+<a href="https://kiosk-acit.github.io/kiosks/1505.html" class="button" style="background-color: #FF5733;">1505</a>
+<a href="https://kiosk-acit.github.io/kiosks/1506.html" class="button" style="background-color: #FF5733;">1506</a>
+<a href="https://kiosk-acit.github.io/kiosks/1507.html" class="button" style="background-color: #FF5733;">1507</a>
+<a href="https://kiosk-acit.github.io/kiosks/1508.html" class="button" style="background-color: #FF5733;">1508</a>
+<a href="https://kiosk-acit.github.io/kiosks/1509.html" class="button" style="background-color: #FF5733;">1509</a>
+<a href="https://kiosk-acit.github.io/kiosks/1510.html" class="button" style="background-color: #FF5733;">1510</a>
+<a href="https://kiosk-acit.github.io/kiosks/1511.html" class="button" style="background-color: #FF5733;">1511</a>
+<a href="https://kiosk-acit.github.io/kiosks/1523.html" class="button" style="background-color: #FF5733;">1523</a>
+<a href="https://kiosk-acit.github.io/kiosks/1526.html" class="button" style="background-color: #FF5733;">1526</a>
+<a href="https://kiosk-acit.github.io/kiosks/1532.html" class="button" style="background-color: #FF5733;">1532</a>
+<a href="https://kiosk-acit.github.io/kiosks/1551.html" class="button" style="background-color: #FF5733;">1551</a>
+<a href="https://kiosk-acit.github.io/kiosks/1554.html" class="button" style="background-color: #FF5733;">1554</a>
+<a href="https://kiosk-acit.github.io/kiosks/1601.html" class="button" style="background-color: #FF5733;">1601</a>
+<a href="https://kiosk-acit.github.io/kiosks/1602.html" class="button" style="background-color: #FF5733;">1602</a>
+<a href="https://kiosk-acit.github.io/kiosks/1603.html" class="button" style="background-color: #FF5733;">1603</a>
+<a href="https://kiosk-acit.github.io/kiosks/1604.html" class="button" style="background-color: #FF5733;">1604</a>
+<a href="https://kiosk-acit.github.io/kiosks/1605.html" class="button" style="background-color: #FF5733;">1605</a>
+<a href="https://kiosk-acit.github.io/kiosks/1606.html" class="button" style="background-color: #FF5733;">1606</a>
+<a href="https://kiosk-acit.github.io/kiosks/1607.html" class="button" style="background-color: #FF5733;">1607</a>
+<a href="https://kiosk-acit.github.io/kiosks/1608.html" class="button" style="background-color: #FF5733;">1608</a>
+<a href="https://kiosk-acit.github.io/kiosks/1609.html" class="button" style="background-color: #FF5733;">1609</a>
+<a href="https://kiosk-acit.github.io/kiosks/1612.html" class="button" style="background-color: #FF5733;">1612</a>
+<a href="https://kiosk-acit.github.io/kiosks/1622.html" class="button" style="background-color: #FF5733;">1622</a>
+<a href="https://kiosk-acit.github.io/kiosks/1623.html" class="button" style="background-color: #FF5733;">1623</a>
+<a href="https://kiosk-acit.github.io/kiosks/1624.html" class="button" style="background-color: #FF5733;">1624</a>
+<a href="https://kiosk-acit.github.io/kiosks/1631.html" class="button" style="background-color: #FF5733;">1631</a>
+<a href="https://kiosk-acit.github.io/kiosks/3104.html" class="button" style="background-color: #33FF57;">3104</a>
+<a href="https://kiosk-acit.github.io/kiosks/3105.html" class="button" style="background-color: #33FF57;">3105</a>
+<a href="https://kiosk-acit.github.io/kiosks/3106.html" class="button" style="background-color: #33FF57;">3106</a>
+<a href="https://kiosk-acit.github.io/kiosks/3107.html" class="button" style="background-color: #33FF57;">3107</a>
+<a href="https://kiosk-acit.github.io/kiosks/3108.html" class="button" style="background-color: #33FF57;">3108</a>
+<a href="https://kiosk-acit.github.io/kiosks/3110.html" class="button" style="background-color: #33FF57;">3110</a>
+<a href="https://kiosk-acit.github.io/kiosks/3206.html" class="button" style="background-color: #33FF57;">3206</a>
+<a href="https://kiosk-acit.github.io/kiosks/3207.html" class="button" style="background-color: #33FF57;">3207</a>
+<a href="https://kiosk-acit.github.io/kiosks/3208.html" class="button" style="background-color: #33FF57;">3208</a>
+<a href="https://kiosk-acit.github.io/kiosks/3303.html" class="button" style="background-color: #33FF57;">3303</a>
+<a href="https://kiosk-acit.github.io/kiosks/3307.html" class="button" style="background-color: #33FF57;">3307</a>
+<a href="https://kiosk-acit.github.io/kiosks/3308.html" class="button" style="background-color: #33FF57;">3308</a>
+<a href="https://kiosk-acit.github.io/kiosks/3350.html" class="button" style="background-color: #33FF57;">3350</a>
+<a href="https://kiosk-acit.github.io/kiosks/3357.html" class="button" style="background-color: #33FF57;">3357</a>
+<a href="https://kiosk-acit.github.io/kiosks/3361.html" class="button" style="background-color: #33FF57;">3361</a>
+<a href="https://kiosk-acit.github.io/kiosks/3503.html" class="button" style="background-color: #33FF57;">3503</a>
+<a href="https://kiosk-acit.github.io/kiosks/3505.html" class="button" style="background-color: #33FF57;">3505</a>
+<a href="https://kiosk-acit.github.io/kiosks/3506.html" class="button" style="background-color: #33FF57;">3506</a>
+<a href="https://kiosk-acit.github.io/kiosks/3507.html" class="button" style="background-color: #33FF57;">3507</a>
+<a href="https://kiosk-acit.github.io/kiosks/3508.html" class="button" style="background-color: #33FF57;">3508</a>
+<a href="https://kiosk-acit.github.io/kiosks/3604.html" class="button" style="background-color: #33FF57;">3604</a>
+<a href="https://kiosk-acit.github.io/kiosks/3605.html" class="button" style="background-color: #33FF57;">3605</a>
+<a href="https://kiosk-acit.github.io/kiosks/3606.html" class="button" style="background-color: #33FF57;">3606</a>
+<a href="https://kiosk-acit.github.io/kiosks/3607.html" class="button" style="background-color: #33FF57;">3607</a>
+<a href="https://kiosk-acit.github.io/kiosks/3703.html" class="button" style="background-color: #33FF57;">3703</a>
+<a href="https://kiosk-acit.github.io/kiosks/3705.html" class="button" style="background-color: #33FF57;">3705</a>
+<a href="https://kiosk-acit.github.io/kiosks/3706.html" class="button" style="background-color: #33FF57;">3706</a>
+<a href="https://kiosk-acit.github.io/kiosks/3707.html" class="button" style="background-color: #33FF57;">3707</a>
+<a href="https://kiosk-acit.github.io/kiosks/3708.html" class="button" style="background-color: #33FF57;">3708</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS1.html" class="button" style="background-color: #3357FF;">DS1</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS1 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS1 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS10.html" class="button" style="background-color: #3357FF;">DS10</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS10 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS10 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS2.html" class="button" style="background-color: #3357FF;">DS2</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS2 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS2 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS3.html" class="button" style="background-color: #3357FF;">DS3</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS3 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS3 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS4.html" class="button" style="background-color: #3357FF;">DS4</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS4 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS4 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS5.html" class="button" style="background-color: #3357FF;">DS5</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS5 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS5 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS6.html" class="button" style="background-color: #3357FF;">DS6</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS6 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS6 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS7.html" class="button" style="background-color: #3357FF;">DS7</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS7 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS7 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS8.html" class="button" style="background-color: #3357FF;">DS8</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS8 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS8 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS9.html" class="button" style="background-color: #3357FF;">DS9</a>
+<a href="https://kiosk-acit.github.io/kiosks/DS9 Delayed Opening.html" class="button" style="background-color: #3357FF;">DS9 Delayed Opening</a>
+<a href="https://kiosk-acit.github.io/kiosks/Gym.html" class="button" style="background-color: #3357FF;">Gym</a>
+<a href="https://kiosk-acit.github.io/kiosks/MC1.html" class="button" style="background-color: #3357FF;">MC1</a>
+<a href="https://kiosk-acit.github.io/kiosks/NARTP-01.html" class="button" style="background-color: #3357FF;">NARTP-01</a>
+<a href="https://kiosk-acit.github.io/kiosks/SW Gym.html" class="button" style="background-color: #3357FF;">SW Gym</a>
+
     </div>
 </body>
 </html>
