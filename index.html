@@ -11,9 +11,10 @@
             height: 100vh;
             margin: 0;
         }
-        .top-bar, .bottom-bar {
+        .top-bar {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             height: 55px;
             background-color: #802c2c;
             color: white;
@@ -23,6 +24,11 @@
         .top-bar img {
             height: 40px;
             margin-right: 10px;
+        }
+        .top-bar .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
         .content {
             display: flex;
@@ -61,32 +67,27 @@
 </head>
 <body>
     <div class="top-bar">
-        <img src="logo.png" alt="Logo">
-        Room 1101 
+        <div>
+            <img src="logo.png" alt="Logo">
+            Room 1101 
+        </div>
+        <div class="contact-info">
+            <span>IT Support Email: servicedesk@acitech.org</span>
+            <span>Phone: 4100</span>
+        </div>
     </div>
     <div class="content">
         <div class="left-half">
-            <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3" id="leftIframe"></iframe>
+            <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
         </div>
         <div class="right-half">
             <div class="top-right">
                 <a href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
             </div>
             <div class="bottom-right">
-                <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18" id="rightIframe"></iframe>
+                <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18"></iframe>
             </div>
         </div>
     </div>
-    <div class="bottom-bar">
-        Atlantic County Institute of Technology
-    </div>
-    <script>
-        window.onload = function() {
-            var leftIframe = document.getElementById('leftIframe');
-            leftIframe.onload = function() {
-                leftIframe.contentWindow.document.getElementById('scannerID').focus();
-            };
-        };
-    </script>
 </body>
 </html>
