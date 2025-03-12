@@ -1,0 +1,116 @@
+{
+  "url": {
+    "Value": [
+      "https://secure.realtimesis.com/acitech/scanner/?scan=CB375874-B709-492F-AEE8-C40ABCF2DE4E",
+      "https://secure.realtimesis.com/acitech/scanner/?scan=A84C4D6C-7426-4CBA-8F37-97C62A456CFB"
+    ]
+  },
+  "tokenserver": {
+    "Value": ""
+  },
+  "customtoken": {
+    "Value": ""
+  },
+  "multipleurlmode": {
+    "Value": "tabs"
+  },
+  "newwindowmode": {
+    "Value": "tab"
+  },
+  "startupdelay": {
+    "Value": 0
+  },
+  "rotaterate": {
+    "Value": false
+  },
+  "displaysysteminfo": {
+    "Value": "admin"
+  },
+  "allowprint": {
+    "Value": false
+  },
+  "hidegslidescontrols": {
+    "Value": false
+  },
+  "local": {
+    "Value": true
+  },
+  "scheduledreset": {
+    "Value": false
+  },
+  "reset": {
+    "Value": 0.2
+  },
+  "clearcookiesreset": {
+    "Value": false
+  },
+  "screensaverreloadinterval": {
+    "Value": null
+  },
+  "hidecursor": {
+    "Value": false
+  },
+  "disablecontextmenu": {
+    "Value": false
+  },
+  "disabledrag": {
+    "Value": false
+  },
+  "disabletouchhighlight": {
+    "Value": false
+  },
+  "disableselection": {
+    "Value": false
+  },
+  "newwindow": {
+    "Value": false
+  },
+  "allowdownload": {
+    "Value": true
+  },
+  "disallowupload": {
+    "Value": false
+  },
+  "disallowiframes": {
+    "Value": false
+  },
+  "useragent": {
+    "Value": ""
+  },
+  "authorization": {
+    "Value": ""
+  },
+  "username": {
+    "Value": "admin"
+  },
+  "password": {
+    "Value": "kioskadmin"
+  },
+  "remoteschedule": {
+    "Value": false
+  },
+  "remotescheduleurl": {
+    "Value": ""
+  },
+  "schedulepollinterval": {
+    "Value": false
+  },
+  "sleepmode": {
+    "Value": "display"
+  },
+  "resetcache": {
+    "Value": false
+  },
+  "shownav": {
+    "Value": true
+  },
+  "showbattery": {
+    "Value": false
+  },
+  "screensaverwarningtime": {
+    "Value": 0
+  },
+  "screensaverwarningmessage": {
+    "Value": "Screensaver starting in {countdown} seconds..."
+  }
+}
