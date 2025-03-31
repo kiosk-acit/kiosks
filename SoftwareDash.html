@@ -19,8 +19,20 @@
 
         h1 {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             color: #333;
+        }
+
+        #search-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #search-input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         .software-grid {
@@ -75,68 +87,89 @@
 <body>
     <div class="container">
         <h1>ACIT - Software and Applications</h1>
-        <div class="software-grid">
-            <div class="software-item">
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search applications...">
+        </div>
+        <div class="software-grid" id="software-grid">
+            <div class="software-item" data-name="EduNovela">
                 <div class="software-icon">Edu</div>
                 <div class="software-name">EduNovela</div>
                 <div class="software-description">EduNovela</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe AfterEffects">
                 <div class="software-icon icon-ae">Ae</div>
                 <div class="software-name">Adobe AfterEffects</div>
                 <div class="software-description">Adobe AfterEffects</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe Animate">
                 <div class="software-icon icon-an">An</div>
                 <div class="software-name">Adobe Animate</div>
                 <div class="software-description">Adobe Animate</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe Audition">
                 <div class="software-icon icon-au">Au</div>
                 <div class="software-name">Adobe Audition</div>
                 <div class="software-description">Adobe Audition</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe CharAnimator">
                 <div class="software-icon icon-ch">Ch</div>
                 <div class="software-name">Adobe CharAnimator</div>
                 <div class="software-description">Adobe CharAnimator</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe Creative Cloud">
                 <div class="software-icon icon-cc">CC</div>
                 <div class="software-name">Adobe Creative Cloud</div>
                 <div class="software-description">Adobe Creative Cloud</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe Illustrator">
                 <div class="software-icon icon-ai">Ai</div>
                 <div class="software-name">Adobe Illustrator</div>
                 <div class="software-description">Adobe Illustrator</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe InDesign">
                 <div class="software-icon icon-id">Id</div>
                 <div class="software-name">Adobe InDesign</div>
                 <div class="software-description">Adobe InDesign</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe Lightroom">
                 <div class="software-icon icon-lr">Lr</div>
                 <div class="software-name">Adobe Lightroom</div>
                 <div class="software-description">Adobe Lightroom</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe MediaEncoder">
                 <div class="software-icon icon-me">Me</div>
                 <div class="software-name">Adobe MediaEncoder</div>
                 <div class="software-description">Adobe MediaEncoder</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe Photoshop">
                 <div class="software-icon icon-ps">Ps</div>
                 <div class="software-name">Adobe Photoshop</div>
                 <div class="software-description">Adobe Photoshop</div>
             </div>
-            <div class="software-item">
+            <div class="software-item" data-name="Adobe Prelude">
                 <div class="software-icon icon-pi">Pi</div>
                 <div class="software-name">Adobe Prelude</div>
                 <div class="software-description">Adobe Prelude</div>
             </div>
         </div>
     </div>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const softwareItems = document.querySelectorAll('.software-item');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            softwareItems.forEach(item => {
+                const itemName = item.dataset.name.toLowerCase();
+                if (itemName.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
