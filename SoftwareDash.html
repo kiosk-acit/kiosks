@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Selection</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .software-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .software-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .software-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .software-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .software-description {
+            color: #777;
+        }
+
+        /* Example Icon Colors (Replace with actual icons or images) */
+        .icon-ae { color: purple; }
+        .icon-an { color: red; }
+        .icon-au { color: green; }
+        .icon-ch { color: #800080; } /* Dark Purple */
+        .icon-ai { color: #008080; } /* Teal */
+        .icon-id { color: #FF69B4; } /* Hot Pink */
+        .icon-lr { color: #808080; } /* Gray */
+        .icon-me { color: #8B008B; } /* Dark Magenta */
+        .icon-ps { color: #0000FF; } /* Blue */
+        .icon-pi { color: #00CED1; } /* Dark Turquoise */
+        .icon-cc { color: #A9A9A9; } /* Dark Gray */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ACIT - Software and Applications</h1>
+        <div class="software-grid">
+            <div class="software-item">
+                <div class="software-icon">Edu</div>
+                <div class="software-name">EduNovela</div>
+                <div class="software-description">EduNovela</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-ae">Ae</div>
+                <div class="software-name">Adobe AfterEffects</div>
+                <div class="software-description">Adobe AfterEffects</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-an">An</div>
+                <div class="software-name">Adobe Animate</div>
+                <div class="software-description">Adobe Animate</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-au">Au</div>
+                <div class="software-name">Adobe Audition</div>
+                <div class="software-description">Adobe Audition</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-ch">Ch</div>
+                <div class="software-name">Adobe CharAnimator</div>
+                <div class="software-description">Adobe CharAnimator</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-cc">CC</div>
+                <div class="software-name">Adobe Creative Cloud</div>
+                <div class="software-description">Adobe Creative Cloud</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-ai">Ai</div>
+                <div class="software-name">Adobe Illustrator</div>
+                <div class="software-description">Adobe Illustrator</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-id">Id</div>
+                <div class="software-name">Adobe InDesign</div>
+                <div class="software-description">Adobe InDesign</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-lr">Lr</div>
+                <div class="software-name">Adobe Lightroom</div>
+                <div class="software-description">Adobe Lightroom</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-me">Me</div>
+                <div class="software-name">Adobe MediaEncoder</div>
+                <div class="software-description">Adobe MediaEncoder</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-ps">Ps</div>
+                <div class="software-name">Adobe Photoshop</div>
+                <div class="software-description">Adobe Photoshop</div>
+            </div>
+            <div class="software-item">
+                <div class="software-icon icon-pi">Pi</div>
+                <div class="software-name">Adobe Prelude</div>
+                <div class="software-description">Adobe Prelude</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
