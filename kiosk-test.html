@@ -100,5 +100,22 @@
         </div>
     </div>
 </div>
+      <h1>Welcome to the Kiosk</h1>
+  <button onclick="openSmartPass()">Go to SmartPass</button>
+
+  <script>
+    function openSmartPass() {
+      const smartpassWindow = window.open("https://app.smartpass.app/main/kioskMode", "_blank");
+
+      // Optional: Periodically check if the SmartPass window is closed
+      const checkInterval = setInterval(() => {
+        if (smartpassWindow.closed) {
+          alert("Returning to Kiosk Home");
+          clearInterval(checkInterval);
+          window.focus();
+        }
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
