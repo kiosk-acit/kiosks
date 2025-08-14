@@ -1,104 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>1101</title>
-<style>
-    body {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        margin: 0; /* Remove all margins */
-        overflow: hidden; /* Prevent scrolling */
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>External Scan</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
     }
+
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 80%);
+      color: #333;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
     .top-bar {
         display: flex;
-        align-items: center;
+        align-items: center; /* Center items vertically */
         justify-content: space-between;
         height: 10vh; /* Adjust height to 10% of viewport height */
         background-color: #802c2c;
         color: white;
         padding: 0 10px;
         font-size: 2vh; /* Font size relative to viewport height */
+        position: relative; /* Ensure the gradient stays within the top bar */
     }
-    .top-bar img {
-        height: 8vh; /* Adjust image size relative to viewport height */
-        margin-right: 10px;
+
+    .top-bar::after {
+        content: "";
+        position: absolute;
+        bottom: 0; /* Align gradient at the bottom of the top bar */
+        left: 0;
+        width: 100%;
+        height: 15px; /* Adjust height for a smoother gradient */
+        background: linear-gradient(to bottom, #802c2c, transparent); /* Fix gradient blending */
+        z-index: -1; /* Place gradient behind the top bar content */
     }
-    .top-bar .contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 2vh; /* Font size relative to viewport height */
+
+    .top-bar div {
+            display: flex;
+            align-items: center; /* Center text and image vertically */
+        }
+        .top-bar img {
+            height: 8vh; /* Adjust image size relative to viewport height */
+            margin-right: 10px;
+        }
+        .top-bar .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-size: 3vh; /* Font size relative to viewport height */
+        }
+    .contact-info {
+      text-align: right;
+      font-size: 1.5rem; /* Increased font size for email and phone */
+      line-height: 1.5; /* Adjusted line height for better spacing */
     }
+
     .content {
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        height: 90vh; /* Content takes the remaining 90% of the viewport height */
-        margin-top: 10px; /* Add a tiny margin above the left and right top sections */
+      flex: 1;
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      overflow: hidden;
     }
+
     .left-half, .right-half {
-        flex: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 10px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      border: none;
+      flex: 1;
+      border-radius: 10px;
+    }
+
+    .smartpass-link {
+      background-image: url('Smartpass.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0;
+      transition: filter 0.3s ease;
+    }
+
+    .smartpass-link:hover {
+      filter: brightness(1.05);
+    }
+
+    .right-half {
         display: flex;
         flex-direction: column;
-        height: 100%; /* Ensure the halves fill the full height of the content */
+        gap: 20px; /* Add spacing between cards */
     }
-    .right-half {
-        margin-right: 10px; /* Reduce margin to maximize space */
+
+    .smartpass-card {
+        flex: 1; /* Takes 33% of the space */
+        height: 33%; /* Explicit height for clarity */
     }
-    .top-right, .left-half {
-        margin-top: 5px; /* Tiny margin above the top sections */
+
+    .risevision-card {
+        flex: 2; /* Takes 66% of the space */
+        height: 66%; /* Explicit height for clarity */
     }
-    .top-right {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px; /* Reduce bottom margin */
+
+    @media (max-width: 1000px) {
+      .content {
+        flex-direction: column;
+      }
     }
-    .top-right a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-image: url('Smartpass.jpg');
-        background-size: cover;
-        background-position: center;
-        text-indent: -9999px; /* Hide text */
-        border-radius: 10px; /* Round the corners if needed */
-    }
-    .bottom-right {
-        flex: 2; /* Make this section twice as big */
-    }
-    iframe {
-        width: 100%;
-        height: 100%; /* Ensure iframes fill their container */
-        border: none;
-    }
-</style>
+  </style>
 </head>
 <body>
-<div class="top-bar">
-    <div>
-        <img alt="Logo" src="logo.png"/>Room 1101
+
+
+
+    <div class="top-bar">
+        <div>
+            <img alt="Logo" src="logo.png"/>
+            <span style="font-size: 4vh;">ROOM: <script>document.write(location.pathname.split('/').pop().replace('.html',''));</script></span>
+        </div>
+        <div class="contact-info">
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <span style="text-align: left; flex: 1; margin-right: 20px;"><strong>IT Support Email:</strong></span>
+                <span style="text-align: right; flex: 1;">servicedesk@acitech.org</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <span style="text-align: left; flex: 1; margin-right: 20px;"><strong>IT Support Phone:</strong></span>
+                <span style="text-align: right; flex: 1;">Ext. 4100</span>
+            </div>
+        </div>
     </div>
-    <div class="contact-info">
-        <span>IT Support Email: servicedesk@acitech.org      Phone: 4100</span>
-    </div>
-</div>
-<div class="content">
+
+  <div class="content">
     <div class="left-half">
-        <iframe src="https://secure.realtimesis.com/acitech/scanner/?scan=09FA0AC1-1C95-472C-8EA2-854A2206C1F3"></iframe>
+      <div class="card">
+        <iframe id="scanner-frame"></iframe>
+      </div>
     </div>
-    <div class="right-half">
-        <div class="top-right">
-            <a href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
-        </div>
-        <div class="bottom-right">
-            <iframe src="https://widgets.risevision.com/viewer/?type=sharedschedule&amp;id=87b8456d-8c30-4b36-80c1-d740b07c3c18"></iframe>
-        </div>
+    <!-- <div class="right-half">
+      <div class="card smartpass-card">
+        <a class="smartpass-link" href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
+      </div>
+      <div class="card risevision-card">
+        <iframe src="https://kiosk-acit.github.io/kiosks/Scan-Widget.html"></iframe>
+      </div> -->
     </div>
-</div>
+  </div>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const roomId = location.pathname.split('/').pop().replace('.html', '');
+
+    fetch('scanners.json')
+        .then(response => response.json())
+        .then(data => {
+            if (data[roomId]) {
+                document.getElementById('scanner-frame').src = data[roomId];
+            } else {
+                console.error(`No scanner URL found for room ${roomId}`);
+            }
+        })
+        .catch(err => console.error('Error loading scanner list:', err));
+});
+</script>
 </body>
+
 </html>
