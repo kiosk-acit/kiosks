@@ -178,22 +178,29 @@
     </div>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const roomId = location.pathname.split('/').pop().replace('.html', '');
-      fetch('External-Scans.json?v=' + Date.now())
-        .then(response => response.json())
-        .then(data => {
-          if (data[roomId]) {
-            document.getElementById('scanner-frame').src = data[roomId];
-          } else {
-            console.error(`No scanner URL found for room ${roomId}`);
-          }
-        })
-        .catch(err => console.error('Error loading scanner list:', err));
-    });
-  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Parse the URL query parameters
+    const params = new URLSearchParams(window.location.search);
+    const roomId = params.get('room'); // e.g., ?room=ROOM123
+
+    if (!roomId) {
+      console.error('No room specified in the URL');
+      return;
+    }
+
+    fetch('External-Scans.json?v=' + Date.now())
+      .then(response => response.json())
+      .then(data => {
+        if (data[roomId]) {
+          document.getElementById('scanner-frame').src = data[roomId];
+        } else {
+          console.error(`No scanner URL found for room ${roomId}`);
+        }
+      })
+      .catch(err => console.error('Error loading scanner list:', err));
+  });
+</script>
 
 </body>
 </html>
-
