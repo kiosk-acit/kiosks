@@ -181,7 +181,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const roomId = location.pathname.split('/').pop().replace('.html', '');
-      fetch('scanners.json?v=' + Date.now())
+      fetch('External-Scans.json?v=' + Date.now())
         .then(response => response.json())
         .then(data => {
           if (data[roomId]) {
@@ -196,3 +196,4 @@
 
 </body>
 </html>
+
