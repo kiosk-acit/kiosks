@@ -142,13 +142,17 @@
 </head>
 <body>
 
-  <div class="top-bar">
-    <div>
-      <img src="logo.png" alt="Logo" />
-      <span style="font-size: 4vh;">
-        ROOM: <script>document.write(location.pathname.split('/').pop().replace('.html',''));</script>
-      </span>
-    </div>
+<div>
+  <img src="logo.png" alt="Logo" />
+  <span style="font-size: 4vh;">
+    ROOM: <script>
+      const params = new URLSearchParams(window.location.search);
+      const roomParam = params.get('room');
+      document.write(roomParam ? roomParam : "Not specified");
+    </script>
+  </span>
+</div>
+
     <div class="contact-info">
       <div>
         <span><strong>IT Support Email:</strong></span>
@@ -209,4 +213,5 @@
 
 </body>
 </html>
+
 
