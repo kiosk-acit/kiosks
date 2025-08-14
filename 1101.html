@@ -180,12 +180,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    // Parse the URL query parameters
     const params = new URLSearchParams(window.location.search);
-    const roomId = params.get('room'); // e.g., ?room=ROOM123
+    const roomId = params.get('room');
+
+    const iframe = document.getElementById('scanner-frame');
 
     if (!roomId) {
-      console.error('No room specified in the URL');
+      iframe.srcdoc = "<p style='color:red; text-align:center; font-size:2em;'>No room specified in URL</p>";
       return;
     }
 
@@ -193,14 +194,19 @@
       .then(response => response.json())
       .then(data => {
         if (data[roomId]) {
-          document.getElementById('scanner-frame').src = data[roomId];
+          iframe.src = data[roomId];
         } else {
-          console.error(`No scanner URL found for room ${roomId}`);
+          iframe.srcdoc = `<p style='color:red; text-align:center; font-size:2em;'>No scanner URL found for room ${roomId}</p>`;
         }
       })
-      .catch(err => console.error('Error loading scanner list:', err));
+      .catch(err => {
+        console.error('Error loading scanner list:', err);
+        iframe.srcdoc = "<p style='color:red; text-align:center; font-size:2em;'>Error loading scanner list</p>";
+      });
   });
 </script>
 
+
 </body>
 </html>
+
