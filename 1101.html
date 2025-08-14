@@ -171,20 +171,20 @@
         <iframe id="scanner-frame"></iframe>
       </div>
     </div>
-    <!-- <div class="right-half">
+    <div class="right-half">
       <div class="card smartpass-card">
         <a class="smartpass-link" href="https://app.smartpass.app/main/kioskMode">Smartpass</a>
       </div>
       <div class="card risevision-card">
         <iframe src="https://kiosk-acit.github.io/kiosks/Scan-Widget.html"></iframe>
-      </div> -->
+      </div>
     </div>
   </div>
     <script>
 document.addEventListener("DOMContentLoaded", () => {
     const roomId = location.pathname.split('/').pop().replace('.html', '');
 
-    fetch('scanners.json')
+    fetch('scanners.json?v=' + Date.now())
         .then(response => response.json())
         .then(data => {
             if (data[roomId]) {
@@ -199,3 +199,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </body>
 
 </html>
+
