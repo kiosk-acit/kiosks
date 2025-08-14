@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Location Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #location {
+      font-size: 2rem;
+      color: #0078D7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chrome Device Location</h1>
+  <p id="location">Loading...</p>
+
+  <script>
+    // Check if chrome.enterprise.deviceAttributes is available
+    if (chrome && chrome.enterprise && chrome.enterprise.deviceAttributes) {
+      chrome.enterprise.deviceAttributes.getAnnotatedLocation(function(location) {
+        const locationDisplay = location || "Location not set";
+        document.getElementById("location").textContent = locationDisplay;
+      });
+    } else {
+      document.getElementById("location").textContent = "API not available. Make sure this is a managed Chrome device in kiosk mode.";
+    }
+  </script>
+</body>
+</html>
