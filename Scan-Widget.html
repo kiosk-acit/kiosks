@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full Screen Rise Vision Display</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden; /* prevent scrollbars */
+    }
+    .wrap {
+      position: fixed;
+      inset: 0; /* top:0; right:0; bottom:0; left:0 */
+      width: 100vw;
+      height: 100vh;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <iframe
+      src="https://widgets.risevision.com/viewer/?type=sharedschedule&id=87b8456d-8c30-4b36-80c1-d740b07c3c18"
+      allow="fullscreen"
+      allowfullscreen
+      referrerpolicy="no-referrer"
+    ></iframe>
+  </div>
+</body>
+</html>
