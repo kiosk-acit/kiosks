@@ -183,7 +183,7 @@
       return;
     }
 
-    fetch('Student-Daily-Scan-Normal-List.json?v=' + Date.now())
+    fetch('DS-Normal-Scan-List.json?v=' + Date.now())
       .then(response => response.json())
       .then(data => {
         if (data[roomId]) {
