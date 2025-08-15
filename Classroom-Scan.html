@@ -189,7 +189,7 @@
       return;
     }
 
-    fetch('External-Scans.json?v=' + Date.now())
+    fetch('Classroom-Scan-List.json?v=' + Date.now())
       .then(response => response.json())
       .then(data => {
         if (data[roomId]) {
@@ -208,6 +208,7 @@
 
 </body>
 </html>
+
 
 
 
