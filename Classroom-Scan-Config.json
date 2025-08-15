@@ -1,0 +1,238 @@
+  {
+  "url": {
+    "Value": [
+      "https://kiosk-acit.github.io/kiosks/noconfig.html"
+    ]
+  },
+  "screensaverurl": {
+    "Value": "https://widgets.risevision.com/viewer/?type=webplayer&id=XT5G78NBG3RC"
+  },
+  "tokenserver": {
+    "Value": ""
+  },
+  "customtoken": {
+    "Value": ""
+  },
+  "multipleurlmode": {
+    "Value": "tabs"
+  },
+  "newwindowmode": {
+    "Value": "tab"
+  },
+  "startupdelay": {
+    "Value": 0
+  },
+  "rotaterate": {
+    "Value": false
+  },
+  "displaysysteminfo": {
+    "Value": "admin"
+  },
+  "allowprint": {
+    "Value": false
+  },
+  "hidegslidescontrols": {
+    "Value": false
+  },
+  "local": {
+    "Value": true
+  },
+  "scheduledreset": {
+    "Value": false
+  },
+  "reset": {
+    "Value": 0.2
+  },
+  "clearcookiesreset": {
+    "Value": false
+  },
+  "screensavertime": {
+    "Value": 0.0
+  },
+  "screensaverreloadinterval": {
+    "Value": null
+  },
+  "hidecursor": {
+    "Value": false
+  },
+  "disablecontextmenu": {
+    "Value": false
+  },
+  "disabledrag": {
+    "Value": false
+  },
+  "disabletouchhighlight": {
+    "Value": false
+  },
+  "disableselection": {
+    "Value": false
+  },
+  "newwindow": {
+    "Value": false
+  },
+  "allowdownload": {
+    "Value": true
+  },
+  "disallowupload": {
+    "Value": false
+  },
+  "disallowiframes": {
+    "Value": false
+  },
+  "useragent": {
+    "Value": ""
+  },
+  "authorization": {
+    "Value": ""
+  },
+  "username": {
+    "Value": "admin"
+  },
+  "password": {
+    "Value": "kioskadmin"
+  },
+  "remoteschedule": {
+    "Value": false
+  },
+  "remotescheduleurl": {
+    "Value": ""
+  },
+  "schedulepollinterval": {
+    "Value": false
+  },
+  "sleepmode": {
+    "Value": "display"
+  },
+  "resetcache": {
+    "Value": false
+  },
+  "shownav": {
+    "Value": true
+  },
+  "showbattery": {
+    "Value": false
+  },
+  "screensaverwarningtime": {
+    "Value": 0
+  },
+  "screensaverwarningmessage": {
+    "Value": "Screensaver starting in {countdown} seconds..."
+  },
+"devices": {
+  "Value": [
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1101"] }, "assetid": "011594" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1102"] }, "assetid": "011538" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1103"] }, "assetid": "011542" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1104"] }, "assetid": "011459" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1105"] }, "assetid": "011587" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1106"] }, "assetid": "011537" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1110"] }, "assetid": "011528" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1111"] }, "assetid": "011529" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1114"] }, "assetid": "011487" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1119"] }, "assetid": "011468" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1120"] }, "assetid": "011442" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1124"] }, "assetid": "011441" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1125"] }, "assetid": "011632" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1138"] }, "assetid": "008761" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1150"] }, "assetid": "011612" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1160"] }, "assetid": "011611" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1173"] }, "assetid": "011440" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1176"] }, "assetid": "011635" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1177"] }, "assetid": "011518" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1179"] }, "assetid": "011625" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1180"] }, "assetid": "011626" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1181"] }, "assetid": "011627" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1182"] }, "assetid": "011515" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1183"] }, "assetid": "011615" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1184"] }, "assetid": "011567" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1185"] }, "assetid": "011479" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1186"] }, "assetid": "011576" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1189"] }, "assetid": "011577" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1190"] }, "assetid": "011581" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1191"] }, "assetid": "011539" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1192"] }, "assetid": "011584" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1193"] }, "assetid": "011474" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1203"] }, "assetid": "011524" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1204"] }, "assetid": "011460" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1205"] }, "assetid": "011582" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1206"] }, "assetid": "011443" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1208"] }, "assetid": "011471" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1209"] }, "assetid": "011485" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1210"] }, "assetid": "011490" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1220"] }, "assetid": "011489" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1261"] }, "assetid": "011570" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1262"] }, "assetid": "011568" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1263"] }, "assetid": "011563" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1265"] }, "assetid": "011589" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1321"] }, "assetid": "011622" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1330"] }, "assetid": "011596" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1332"] }, "assetid": "011493" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1334"] }, "assetid": "011445" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1350"] }, "assetid": "011592" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1401"] }, "assetid": "011466" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1402"] }, "assetid": "011566" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1409"] }, "assetid": "011572" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1410"] }, "assetid": "011531" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1412"] }, "assetid": "011571" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1413"] }, "assetid": "011573" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1414"] }, "assetid": "011588" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1501"] }, "assetid": "011595" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1502"] }, "assetid": "011477" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1503"] }, "assetid": "011543" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1504"] }, "assetid": "011472" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1505"] }, "assetid": "011590" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1506"] }, "assetid": "011620" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1507"] }, "assetid": "011621" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1508"] }, "assetid": "011624" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1509"] }, "assetid": "011623" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1510"] }, "assetid": "011473" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1511"] }, "assetid": "011545" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1523"] }, "assetid": "011541" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1526"] }, "assetid": "011555" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1551"] }, "assetid": "011486" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1554"] }, "assetid": "011569" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1601"] }, "assetid": "011591" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1602"] }, "assetid": "011450" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1603"] }, "assetid": "011629" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1604"] }, "assetid": "011630" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1605"] }, "assetid": "011552" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1606"] }, "assetid": "011560" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1607"] }, "assetid": "011561" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1608"] }, "assetid": "011547" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1609"] }, "assetid": "011548" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1612"] }, "assetid": "011549" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1622"] }, "assetid": "011550" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1623"] }, "assetid": "011516" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=1624"] }, "assetid": "011540" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3104"] }, "assetid": "011603" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3105"] }, "assetid": "011575" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3106"] }, "assetid": "011616" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3107"] }, "assetid": "011464" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3108"] }, "assetid": "011457" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3110"] }, "assetid": "011456" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3206"] }, "assetid": "011452" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3207"] }, "assetid": "011448" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3208"] }, "assetid": "011447" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3303"] }, "assetid": "011438" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3307"] }, "assetid": "011467" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3308"] }, "assetid": "011463" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3350"] }, "assetid": "011462" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3357"] }, "assetid": "011564" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3361"] }, "assetid": "011578" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3503"] }, "assetid": "011559" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3505"] }, "assetid": "011558" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3506"] }, "assetid": "011502" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3507"] }, "assetid": "011500" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3508"] }, "assetid": "011634" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3604"] }, "assetid": "011633" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3605"] }, "assetid": "011562" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3606"] }, "assetid": "011601" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3607"] }, "assetid": "011600" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3703"] }, "assetid": "011599" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3705"] }, "assetid": "011597" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3706"] }, "assetid": "011523" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3707"] }, "assetid": "011520" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/Classroom-Scan.html?room=3708"] }, "assetid": "011469" }
+  ]
+  }
+}
