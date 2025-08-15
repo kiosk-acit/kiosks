@@ -200,7 +200,7 @@
       return;
     }
 
-    fetch('Student-Daily-Scan-Delayed-List.json?v=' + Date.now())
+    fetch('DS-Delayed-Scan-List.json?v=' + Date.now())
       .then(response => response.json())
       .then(data => {
         if (data[roomId]) {
