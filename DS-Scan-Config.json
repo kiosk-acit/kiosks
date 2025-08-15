@@ -1,0 +1,149 @@
+ {
+  "url": {
+    "Value": [
+      "https://kiosk-acit.github.io/kiosks/noconfig.html"
+    ]
+  },
+  "screensaverurl": {
+    "Value": "https://widgets.risevision.com/viewer/?type=webplayer&id=XT5G78NBG3RC"
+  },
+  "tokenserver": {
+    "Value": ""
+  },
+  "customtoken": {
+    "Value": ""
+  },
+  "multipleurlmode": {
+    "Value": "tabs"
+  },
+  "newwindowmode": {
+    "Value": "tab"
+  },
+  "startupdelay": {
+    "Value": 0
+  },
+  "rotaterate": {
+    "Value": false
+  },
+  "displaysysteminfo": {
+    "Value": "admin"
+  },
+  "allowprint": {
+    "Value": false
+  },
+  "hidegslidescontrols": {
+    "Value": false
+  },
+  "local": {
+    "Value": true
+  },
+  "scheduledreset": {
+    "Value": false
+  },
+  "reset": {
+    "Value": 0.2
+  },
+  "clearcookiesreset": {
+    "Value": true
+  },
+  "screensavertime": {
+    "Value": 0.0
+  },
+  "screensaverreloadinterval": {
+    "Value": null
+  },
+  "hidecursor": {
+    "Value": false
+  },
+  "disablecontextmenu": {
+    "Value": false
+  },
+  "disabledrag": {
+    "Value": false
+  },
+  "disabletouchhighlight": {
+    "Value": false
+  },
+  "disableselection": {
+    "Value": false
+  },
+  "newwindow": {
+    "Value": false
+  },
+  "allowdownload": {
+    "Value": true
+  },
+  "disallowupload": {
+    "Value": false
+  },
+  "disallowiframes": {
+    "Value": false
+  },
+  "useragent": {
+    "Value": ""
+  },
+  "authorization": {
+    "Value": ""
+  },
+  "username": {
+    "Value": "admin"
+  },
+  "password": {
+    "Value": "kioskadmin"
+  },
+  "remoteschedule": {
+    "Value": false
+  },
+  "remotescheduleurl": {
+    "Value": ""
+  },
+  "schedulepollinterval": {
+    "Value": false
+  },
+  "sleepmode": {
+    "Value": "display"
+  },
+  "resetcache": {
+    "Value": false
+  },
+  "shownav": {
+    "Value": true
+  },
+  "showbattery": {
+    "Value": false
+  },
+  "screensaverwarningtime": {
+    "Value": 0
+  },
+  "screensaverwarningmessage": {
+    "Value": "Screensaver starting in {countdown} seconds..."
+  },
+"devices": {
+  "Value": [
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS1-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS1-Delayed"] }, "assetid": "011593" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS1-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS1-Delayed"] }, "assetid": "011609" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS1-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS1-Delayed"] }, "assetid": "011579" },
+
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS2-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS2-Delayed"] },"assetid":  "011449"},
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS3-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS3-Delayed"] }, "assetid": "000000" },
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS4-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS4-Delayed"] }, "assetid": "011585" },
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS5-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS5-Delayed"] }, "assetid": "011594" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS5-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS5-Delayed"] }, "assetid": "011583" },
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS6-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS6-Delayed"] }, "assetid": "011544" },
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS6-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS6-Delayed"] }, "assetid": "011580" },
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS7-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS7-Delayed"] }, "assetid": "011446" },
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS8-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS8-Delayed"] }, "assetid": "000000" },
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS9-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS9-Delayed"] }, "assetid": "000000" },
+
+    { "configuration": { "url": ["https://kiosk-acit.github.io/kiosks/DS-Normal-Scan.html?room=DS10-Normal","https://kiosk-acit.github.io/kiosks/DS-Delayed-Scan.html?room=DS10-Delayed"] }, "assetid": "000000" }
+  ]
+}
+}
